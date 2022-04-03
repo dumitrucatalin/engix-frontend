@@ -1,0 +1,17 @@
+<div class="center">
+  <h1>Reservations</h1>
+
+  <div id="menu">
+    <mat-selection-list #shoes [multiple]="false">
+      <mat-list-option (click)="goToAddReservations()">
+        Add reservations
+      </mat-list-option>
+
+      <mat-list-option (click)="goToManageReservations()">
+        Manage reservations
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>

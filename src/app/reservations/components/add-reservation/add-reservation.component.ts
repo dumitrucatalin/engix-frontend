@@ -49,7 +49,7 @@ export class AddReservationComponent implements OnInit {
     }, error => {
       Swal.fire(
         'Error',
-        error.error.messge || 'Server Error',
+        error.error.message ? error.error.message : 'Server Error',
         'error'
       )
     })

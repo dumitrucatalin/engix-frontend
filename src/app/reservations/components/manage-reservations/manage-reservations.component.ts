@@ -20,10 +20,10 @@ export class ManageReservationsComponent implements OnInit {
     private httpService: HttpService
   ) {
     this.email = localStorage.getItem('email') || '';
+    this.getReservations(this.email);
   }
 
   ngOnInit(): void {
-    this.getReservations(this.email);
   }
 
   private getReservations(email: string) {
